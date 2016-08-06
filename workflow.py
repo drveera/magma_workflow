@@ -36,4 +36,3 @@ resultfile = s.folder + '/results.csv'
 target('collect', input=[filefolder + name + '.sets.out' for name in studies.shortname], output=resultfile) << '''
     python collect.py {} {} {}'''.format(s.studyfolder, filefolder, resultfile)
 
-print '''python collect.py {} {} {}'''.format(s.studyfolder, filefolder, resultfile)
