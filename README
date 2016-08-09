@@ -1,0 +1,29 @@
+Performs gene-set analysis with MAGMA, using gwf.
+
+
+Requirements:
+
+Python pandas
+
+MAGMA: http://ctg.cncr.nl/software/magma
+
+gwf: http://mailund.github.io/gwf/
+
+The association studies from which the gene p values are derived, in the format expected by MAGMA.
+
+
+usage: run.py [-h] [--gwf GWF] [--snploc SNPLOC] [--studyfolder STUDYFOLDER]
+              [--geneloc GENELOC] [--setfile SETFILE] [--folder FOLDER]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --gwf GWF             the path to the gwf workflow
+  --snploc SNPLOC       plink file stub, such as hapmap or 1000 genomes (see
+                        MAGMA documentation)
+  --studyfolder STUDYFOLDER
+                        the folder containing the studies with the snp p
+                        values
+  --geneloc GENELOC     gene locations file (see MAGMA documentation)
+  --setfile SETFILE     gene set file (see MAGMA documentation)
+  --folder FOLDER       folder where output files are placed
+
